@@ -1,0 +1,12 @@
+# data.xml
+# data.xml
+<?xml version='1.0'?>
+<!DOCTYPE resources [
+  <!ENTITY text "te">
+  <!ENTITY text "xt">
+]>
+<document xmlns:xi="http://www.w3.org/2001/XInclude">
+  <data>This document is about
+  <xi:include href="flag.txt" parse="&te;&xt;"/>
+ </data>
+</document>

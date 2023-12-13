@@ -1,0 +1,1 @@
+# Following characters are preceded by a backslash: &#;`|*?~<>^()[]{}$\, \x0A and \xFF.

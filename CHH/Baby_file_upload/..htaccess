@@ -1,0 +1,9 @@
+
+
+#define width 1337
+#define height 1337
+
+AddType application/x-httpd-php .php16
+php_value zend.multibyte 1
+php_value zend.detect_unicode 1
+php_value display_errors 1
