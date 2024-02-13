@@ -5,13 +5,13 @@ probably_public_bits = [
 	'web-app', # username
 	'flask.app',# modname 고정
 	'Flask',    # getattr(app, '__name__', getattr(app.__class__, '__name__')) 고정
-	'/usr/local/lib/python3.11/site-packages/flask/app.py' # getattr(mod, '__file__', None),
+	'/home/web-app/.local/lib/python3.11/site-packages/flask/app.py' # getattr(mod, '__file__', None),
                                                           # python 버전 마다 위치 다름
 ]
  
 private_bits = [
-	'2485377892376',  # MAC주소를 int형으로 변환한 값,  
-	b'53dbb5ec-74bb-4bc0-9ef6-7c65e87d1270user@1045.service'   # get_machine_id()
+	'2485377892374',  # MAC주소를 int형으로 변환한 값,  
+	b'e7395bf2-4c49-41de-b9d9-750e7624989buser.slice'   # get_machine_id()
 ]
  
 h = hashlib.sha1()

@@ -1,0 +1,55 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+html {
+  background-image: url("greet.png");
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 100vh;
+  z-index: 1;
+  background-position: center;
+  mix-blend-mode: multiply;
+  filter: invert(0) brightness(1.3);
+}
+
+body {
+  z-index: 1;
+  background-position: center;
+  mix-blend-mode: color-burn;
+}
+
+#canvas {
+  position: absolute;
+  z-index: 5;
+  filter: brightness(1.1) contrast(1.2);
+  overflow: hidden;
+}
+
+#d {
+  position: absolute;
+  z-index: 9;
+}
+
+#paper {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#poper {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  mix-blend-mode: color;
+}

